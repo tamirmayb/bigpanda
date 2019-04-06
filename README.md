@@ -1,7 +1,6 @@
 # BigPanda Back-end Task
 
-## Implement a Non Blocking Producer/Consumer stream processing service that exposes an HTTP api.
-Using a given blackbox executable which generates infinite stream of lines of event data encoded in JSON. 
+## Implement a Non Blocking Producer/Consumer stream processing service that exposes an HTTP api. Use a given blackbox executable which generates infinite stream of lines of event data encoded in JSON. 
 
 Author: Tamir Mayblat
 
