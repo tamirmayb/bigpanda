@@ -39,8 +39,8 @@ public class EventProcessingService {
 						}
 					});
 			Executors.newSingleThreadExecutor().submit(eventStream);
-		}catch(Exception e) {
-			e.printStackTrace();
+		} catch(Exception e) {
+			log.error("Error in init {}", e)
 		}
 	}
 }
