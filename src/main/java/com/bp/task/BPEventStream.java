@@ -31,9 +31,8 @@ public class BPEventStream implements Runnable {
         	  try {
         		  log.info("tring to read event, length = {}", s.length());
         		  event = jsonMapper.readValue(s, BpEvent.class);
-        	  }catch(Exception e) {
+        	  } catch(Exception e) {
         		  log.debug("Got bad json exception tring to continue...", e);
-        		  log.debug("exception = {}", e);
         	  }
         	  return event;
           }).forEach(consumer);
