@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 public class EventCounterService {
 	final static Logger log = LoggerFactory.getLogger(EventCounterService.class);
 	
-	private Map<String, Integer> words = new ConcurrentHashMap<String, Integer>();
-	private Map<String, Integer> types = new ConcurrentHashMap<String, Integer>();
+	private Map<String, Integer> words = new HashMap<String, Integer>();
+	private Map<String, Integer> types = new HashMap<String, Integer>();
 	
 	public void countWords(String word) {
 		Integer wordCount = words.get(word);
